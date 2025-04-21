@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <title>economía circular</title>
+    <meta name="description" content="Página principal de las jornadas de economía circular">
+    <meta name="author" content="Edurne Marco García">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <include src="partials/_navbar.html"></include>
+    <main class="poster">
+      <div class="poster__item poster__main">
+        <h1>JORNADAS DE ECONOMÍA CIRCULAR<br><span>del 12 al 18 de mayo</span></h1>
+      </div>
+      <div class="poster__item poster__item--1">
+        <h2>Participantes</h2>
+        <p>Descubre todos los participantes de las jornadas y las actividades programadas como talleres colaborativos.</p>
+        <p><strong>13 al 15 de mayo</strong></p>
+      </div>
+    
+      <div class="poster__item poster__item--2">
+        <h2>Ciudades Circulares: retos y soluciones</h2>
+        <p>Jornada técnica con casos reales de urbanismo circular, movilidad sostenible y gestión de residuos.
+        <p><strong>18 de mayo, 10:00am</strong></p>
+      </div>
+    
+      <div class="poster__item poster__item--3">
+        <h2>Startup Market: innovación circular</h2>
+        <p>Feria de startups emergentes que aplican modelos de economía circular: desde materiales biodegradables hasta plataformas de reutilización.</p>
+        <p><strong>15 al 18 de mayo</strong></p>
+      </div>
+    </main>
+      <include src="partials/_footer.html"></include>
+      <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
