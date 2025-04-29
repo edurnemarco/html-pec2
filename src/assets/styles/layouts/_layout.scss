@@ -3,9 +3,12 @@
   container-name: poster;
 }
 
-.article {
+.article-content {
   container-type: inline-size;
   container-name: article;
-  width: 80%;
-  margin: 2rem auto;
+}
+
+.participants-container {
+  container-type: inline-size;
+  container-name: participants;
 }

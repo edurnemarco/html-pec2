@@ -1,0 +1,117 @@
+@layer base {
+  body {
+    font-family: $font-family-serif;
+    background-color: $body-bg;
+  }
+
+  h1, h2 {
+    font-family: $font-family-serif;
+  }
+}
+
+@layer layout {
+  .form-container {
+    padding: 2rem;
+    background-color: $color-oklch;
+    border-radius: $border-radius;
+  }
+
+  .galeria h2 {
+    text-align: center;
+    color: $color4;
+    margin-bottom: 2rem;
+  }
+
+  .galeria .splide__slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+@layer components {
+  .colabora h1 {
+    color: $color4;
+  }
+
+  .form-control {
+    color: $text-color;
+    background-color: #fff;
+    border-color: $color2-neon;
+  }
+
+  .form-control:focus {
+    border-color: $color-oklch;
+    box-shadow: 0 0 0 0.2rem rgba(140, 255, 0, 0.25);
+  }
+
+  .btn-primary {
+    color: white;
+    background-color: $color2-neon;
+    border-color: $color2-neon;
+  }
+
+  .btn-primary:hover {
+    background-color: $color-oklch;
+    border-color: $color-oklch;
+  }
+
+  .colabora-form {
+    color: $color4-neon;
+    background-color: $color2-neon;
+  }
+
+  .colabora-form input,
+  .colabora-form textarea {
+    border: 1px solid $color3-neon;
+    color: $color4-neon;
+  }
+
+  .colabora-form input:focus,
+  .colabora-form textarea:focus {
+    border-color: $primary-color-neon;
+    outline: 2px solid $primary-color-neon;
+  }
+
+  .colabora-form button {
+    color: white;
+    background-color: $primary-color-neon;
+  }
+}
+
+@layer states {
+  .form-control:focus {
+    border-color: $color-oklch;
+    box-shadow: 0 0 0 0.2rem rgba(140, 255, 0, 0.25);
+  }
+
+  .btn-primary:hover {
+    background-color: $color-oklch;
+    border-color: $color-oklch;
+  }
+}
+
+@layer theme {
+  .colabora h1 {
+    color: $color4;
+  }
+
+  .galeria h2 {
+    color: $color4;
+  }
+
+  .colabora-form {
+    background-color: $color2-neon;
+  }
+
+  .colabora-form input,
+  .colabora-form textarea {
+    border: 1px solid $color3-neon;
+    color: $color4-neon;
+  }
+
+  .colabora-form button {
+    background-color: $primary-color-neon;
+  }
+}

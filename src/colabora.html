@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>economía circular - artículo</title>
+    <meta name="description" content="artículo Economía circular: línea recta hacia los beneficios a largo plazo">
+    <meta name="author" content="Edurne Marco García">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  </head>
+  <body>
+    <include src="partials/_navbar.html"></include>
+    <main class="colabora container py-5">
+        <h1 class="text-center mb-4">Colabora con las Jornadas de Economía Circular</h1>
+        <p class="text-center mb-5">¿Tienes una propuesta, taller o experiencia que quieras compartir? Rellena el formulario y cuéntanos cómo puedes contribuir.</p>
+      
+        <form name="colabora" method="POST" data-netlify="true" class="needs-validation" novalidate>
+          <input type="hidden" name="form-name" value="colabora">
+      
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+      
+          <div class="mb-4">
+            <label for="message" class="form-label">Propuesta</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Enviar propuesta</button>
+        </form>
+        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="thankYouModalLabel">¡Gracias por tu propuesta!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Tu propuesta ha sido enviada correctamente. Nos pondremos en contacto contigo pronto.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section class="galeria mt-5">
+            <h2>Galería de imágenes</h2>
+            <div class="splide" aria-label="Galería de imágenes">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="./assets/images/img1.jpg" alt="Imagen 1"></li>
+                  <li class="splide__slide"><img src="./assets/images/img2.jpg" alt="Imagen 2"></li>
+                  <li class="splide__slide"><img src="./assets/images/img3.jpg" alt="Imagen 3"></li>
+                  <li class="splide__slide"><img src="./assets/images/img4.jpg" alt="Imagen 4"></li>
+                  <li class="splide__slide"><img src="./assets/images/img5.jpg" alt="Imagen 5"></li>
+            
+                  <!-- Añade más imágenes si lo deseas -->
+                </ul>
+              </div>
+            </div>
+          </section>
+      </main>
+    <include src="partials/_footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

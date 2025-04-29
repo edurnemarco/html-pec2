@@ -1,11 +1,15 @@
 @import "variables";
+@import "base";
 
 @import "pages/home";
 @import "pages/article";
+@import "pages/participants";
+@import "pages/colabora";
 
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/layout";
 
+
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";

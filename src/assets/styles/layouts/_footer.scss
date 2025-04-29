@@ -1,28 +1,13 @@
 .footer {
-  background-color: $primary-color;
   padding: 2rem 1rem;
-  margin-top: 2rem;
   text-align: center;
+  background-color: $primary-color;
+  margin-top: 2rem;
 
   .footer__logo img {
     max-width: 100px;
     height: auto;
     margin-bottom: 0;
-  }
-
-  .footer__nav ul {
-    padding: 0;
-    margin: 0;
-    li {
-      a {
-        text-decoration: none;
-        color: $text-color;
-
-        &:hover {
-          color: $text-contrast;
-        }
-      }
-    }
   }
 
   .footer__social {
@@ -38,7 +23,22 @@
         color: $text-contrast;
       }
     } 
+
+  .footer__nav ul {
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          color: $text-contrast;
+        }
+      }
+    }
   }
+}
 
   @media (min-width: breakpoint("tablet")) {
     .footer__content {
