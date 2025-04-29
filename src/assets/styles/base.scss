@@ -1,8 +1,9 @@
-body {
+@layer base {
+  body {
     background-color: $body-bg;
-}
+  }
 
-p {
+  p {
     font-size: 0.8rem;
     color: $text-color;
   
@@ -14,29 +15,21 @@ p {
       font-size: 1.1rem;
     }
   }
-  
-  h1 {
-    font-size: 2rem;
-  
+}
+
+@layer typography {
+  h1, h2 {
+    font-size: 1.5rem !important;
+
     @media (min-width: breakpoint("tablet")) {
-      font-size: 2.5rem;
-    }
-  
-    @media (min-width: breakpoint("desktop")) {
-      font-size: 3rem;
+      font-size: 2rem !important;
     }
   }
-  
-  h2,
   h3 {
-    font-size: 1.5rem;
-  
+    font-size: 1rem !important;
+
     @media (min-width: breakpoint("tablet")) {
-      font-size: 1.75rem;
-    }
-  
-    @media (min-width: breakpoint("desktop")) {
-      font-size: 2rem;
+      font-size: 1.5rem !important;
     }
   }
-  
+}
