@@ -19,17 +19,10 @@
 
 @layer typography {
   h1, h2 {
-    font-size: 1.3rem !important;
-
-    @media (min-width: breakpoint("tablet")) {
-      font-size: 2rem !important;
-    }
+    font-size: 1.5rem !important;
   }
-  h3 {
-    font-size: 1rem !important;
 
-    @media (min-width: breakpoint("tablet")) {
-      font-size: 1.5rem !important;
-    }
+  h3 {
+    font-size: 1.3rem !important;
   }
 }

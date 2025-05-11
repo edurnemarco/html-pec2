@@ -16,7 +16,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      min-width: 100%;
+      width: fit-content;
       height: fit-content;
       padding: 1rem;
       font-size: 0.9rem;
@@ -28,7 +28,7 @@
 
       h2 {
         margin: 0;
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: #ffe082;
       }
 
@@ -38,7 +38,7 @@
     }
 
     .poster__item--1 {
-      grid-column: 2 / 5;
+      grid-column: 3 / 5;
       grid-row: 2 / span 4;
       background-color: $color2;
     }
@@ -49,8 +49,8 @@
       background-color: $color3;
 
       h2 {
-      font-size: 1.5rem;
-      color: $color4;
+        margin: 0;
+        color: $color4;
       }
     }
     
