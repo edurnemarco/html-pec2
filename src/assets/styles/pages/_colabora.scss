@@ -3,26 +3,24 @@
     font-family: $font-family-serif;
     background-color: $body-bg;
   }
-
-  h1, h2 {
-    font-family: $font-family-serif;
-  }
 }
 
 @layer layout {
   .colabora {
     margin: auto;
+    container-type: inline-size;
+    container-name: colabora;
   }
+
   .form-container {
     padding: 2rem;
     background-color: $color-oklch;
     border-radius: $border-radius;
-  }
 
-  .galeria h2 {
-    text-align: center;
-    color: $color4;
-    margin-bottom: 2rem;
+    @container colabora (min-width: #{breakpoint("tablet")}) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
   }
 
   .galeria .splide__slide img {
@@ -33,31 +31,34 @@
   }
 }
 
-@layer components {
+@layer typography {
+  h1, h2 {
+    font-family: $font-family-serif;
+  }
+
   .colabora h1 {
+    font-size: 3rem;
     color: $color4;
   }
 
+  .galeria h2 {
+    text-align: center;
+    color: $color4;
+    margin-bottom: 2rem;
+  }
+}
+
+@layer components {
   .form-control {
     color: $text-color;
     background-color: #fff;
     border-color: $color2-neon;
   }
 
-  .form-control:focus {
-    border-color: $color-oklch;
-    box-shadow: 0 0 0 0.2rem rgba(140, 255, 0, 0.25);
-  }
-
   .btn-primary {
     color: white;
     background-color: $color2-neon;
     border-color: $color2-neon;
-  }
-
-  .btn-primary:hover {
-    background-color: $color-oklch;
-    border-color: $color-oklch;
   }
 
   .colabora-form {
@@ -69,12 +70,6 @@
   .colabora-form textarea {
     border: 1px solid $color3-neon;
     color: $color4-neon;
-  }
-
-  .colabora-form input:focus,
-  .colabora-form textarea:focus {
-    border-color: $primary-color-neon;
-    outline: 2px solid $primary-color-neon;
   }
 
   .colabora-form button {
@@ -89,32 +84,14 @@
     box-shadow: 0 0 0 0.2rem rgba(140, 255, 0, 0.25);
   }
 
+  .colabora-form input:focus,
+  .colabora-form textarea:focus {
+    border-color: $primary-color-neon;
+    outline: 2px solid $primary-color-neon;
+  }
+
   .btn-primary:hover {
     background-color: $color-oklch;
     border-color: $color-oklch;
-  }
-}
-
-@layer theme {
-  .colabora h1 {
-    color: $color4;
-  }
-
-  .galeria h2 {
-    color: $color4;
-  }
-
-  .colabora-form {
-    background-color: $color2-neon;
-  }
-
-  .colabora-form input,
-  .colabora-form textarea {
-    border: 1px solid $color3-neon;
-    color: $color4-neon;
-  }
-
-  .colabora-form button {
-    background-color: $primary-color-neon;
   }
 }

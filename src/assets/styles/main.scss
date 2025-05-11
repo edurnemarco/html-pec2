@@ -1,4 +1,7 @@
 @import "variables";
+
+@import "bootstrap/scss/bootstrap";
+
 @import "base";
 
 @import "pages/home";
@@ -12,4 +15,3 @@
 
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-@import "bootstrap/scss/bootstrap";
